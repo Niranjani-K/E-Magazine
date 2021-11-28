@@ -1,5 +1,5 @@
 
-package codes;
+import loginRegisteration.login;
 
 public class Registration
 {

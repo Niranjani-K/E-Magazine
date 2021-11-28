@@ -1,6 +1,6 @@
 
 
-package codes;
+package loginRegisteration;
 
 import codes.*;
 import java.awt.Color;
