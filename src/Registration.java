@@ -1,4 +1,3 @@
-
 import loginRegisteration.login;
 
 public class Registration

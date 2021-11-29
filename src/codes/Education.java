@@ -1,7 +1,7 @@
 
 package codes;
 import java.awt.Color;
-
+import javax.swing.JColorChooser;
 public class Education extends javax.swing.JFrame {
 
     public Education() {

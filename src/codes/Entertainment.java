@@ -2,6 +2,7 @@ package codes;
 
 
 import java.awt.Color;
+import javax.swing.JColorChooser;
 public class Entertainment extends javax.swing.JFrame {
     public Entertainment() {
         initComponents();
