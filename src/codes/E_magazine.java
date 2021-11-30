@@ -14,14 +14,20 @@ public class E_magazine extends javax.swing.JFrame {
      */
     public E_magazine() {
         initComponents();
-                     jButton1.setBackground(new Color(0 , 0 , 0,30));
-                       jButton2.setBackground(new Color(0 , 0 , 0,30));
-                       jButton3.setBackground(new Color(0 , 0 , 0,30));
-                        jButton4.setBackground(new Color(0 , 0 , 0,30));
-         jButton1.setOpaque(false);
-                  jButton2.setOpaque(false);
-                           jButton3.setOpaque(false);
-                                    jButton4.setOpaque(false);
+            jButton1.setBackground(new Color(0 , 0 , 0,30));
+            jButton2.setBackground(new Color(0 , 0 , 0,30));
+            jButton3.setBackground(new Color(0 , 0 , 0,30));
+            jButton4.setBackground(new Color(0 , 0 , 0,30));
+            jButton5.setBackground(new Color(0 , 0 , 0,30));
+            jButton6.setBackground(new Color(0 , 0 , 0,30));
+            jButton7.setBackground(new Color(0 , 0 , 0,30));
+            jButton1.setOpaque(false);
+            jButton2.setOpaque(false);
+            jButton3.setOpaque(false);
+            jButton4.setOpaque(false);
+            jButton5.setOpaque(false);
+            jButton6.setOpaque(false);
+            jButton7.setOpaque(false);
                                          //    jButton1.getViewport().setOpaque(false);
          this.setLocationRelativeTo(null);
 
@@ -49,7 +55,6 @@ public class E_magazine extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
-        close = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -175,19 +180,6 @@ public class E_magazine extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 640));
         getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 140, -1, -1));
 
-        close.setBackground(new java.awt.Color(255, 51, 51));
-        close.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        close.setForeground(new java.awt.Color(255, 255, 255));
-        close.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        close.setText("X");
-        close.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        close.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                closeMouseClicked(evt);
-            }
-        });
-        getContentPane().add(close, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -214,10 +206,6 @@ public class E_magazine extends javax.swing.JFrame {
         Sport e=new Sport();
         e.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_closeMouseClicked
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -266,7 +254,6 @@ public class E_magazine extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel close;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

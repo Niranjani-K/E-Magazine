@@ -5,7 +5,7 @@ import java.awt.Color;
 import javax.swing.JFrame;
 
 public class Science extends JFrame{
-    Template k = new Template();
+    
     public Science() {
         initComponents();
          jTextField1.setBackground(new Color(0 , 0 , 0,64));
@@ -16,9 +16,11 @@ public class Science extends JFrame{
          jScrollPane2.getViewport().setOpaque(false);
          jScrollPane2.setOpaque(false);
         this.setLocationRelativeTo(null);
+        
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     }
 
-    
+    Template temp = new Template();
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -155,12 +157,12 @@ public class Science extends JFrame{
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void upload_imgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_imgActionPerformed
-        k.setImage(jLabel1);
+        temp.setImage(jLabel1);
     }//GEN-LAST:event_upload_imgActionPerformed
 
     private void save_fileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_save_fileActionPerformed
         String Title=jTextField1.getText();
-        k.print(jPanel1,Title);
+        temp.print(jPanel1,Title);
     }//GEN-LAST:event_save_fileActionPerformed
 
     private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
@@ -198,8 +200,10 @@ public class Science extends JFrame{
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Science().setVisible(true);
+       java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Science().setVisible(true);
+            }
         });
     }
 

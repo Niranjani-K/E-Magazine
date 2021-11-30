@@ -13,7 +13,11 @@ public class Entertainment extends javax.swing.JFrame {
         jScrollPane2.getViewport().setOpaque(false);
         jTextArea2.setOpaque(false);
         jScrollPane2.setOpaque(false);
+        
         this.setLocationRelativeTo(null);
+        
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -149,14 +153,14 @@ public class Entertainment extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-    Template k = new Template();
+    Template temp = new Template();
     private void upload_imgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_imgActionPerformed
-       k.setImage(jLabel1);
+       temp.setImage(jLabel1);
     }//GEN-LAST:event_upload_imgActionPerformed
 
     private void save_fileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_save_fileActionPerformed
          String Title=jTextField1.getText();
-        k.print(jPanel1,Title);
+        temp.print(jPanel1,Title);
     }//GEN-LAST:event_save_fileActionPerformed
 
     private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
@@ -201,8 +205,10 @@ public class Entertainment extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Entertainment().setVisible(true);
+       java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Entertainment().setVisible(true);
+            }
         });
     }
 

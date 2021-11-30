@@ -13,10 +13,13 @@ public class Education extends javax.swing.JFrame {
          jTextArea2.setOpaque(false);
          jScrollPane2.getViewport().setOpaque(false);
          jScrollPane2.setOpaque(false);
-        this.setLocationRelativeTo(null);
+        
+         this.setLocationRelativeTo(null);
+        
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     }
  
-    Template k = new Template();
+    Template temp = new Template();
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -160,12 +163,12 @@ public class Education extends javax.swing.JFrame {
     }//GEN-LAST:event_formComponentAdded
 
     private void upload_imgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upload_imgActionPerformed
-        k.setImage(jLabel1);
+        temp.setImage(jLabel1);
     }//GEN-LAST:event_upload_imgActionPerformed
 
     private void save_fileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_save_fileActionPerformed
         String Title=jTextField1.getText();
-        k.print(jPanel1,Title);
+        temp.print(jPanel1,Title);
     }//GEN-LAST:event_save_fileActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -214,8 +217,10 @@ public class Education extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Education().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Education().setVisible(true);
+            }
         });
     }
 
